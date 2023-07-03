@@ -1,0 +1,57 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+    --new-color: #E1523D
+}
+body {
+    font-family: cursive;
+}
+
+.all {
+    margin: 0 auto !important;
+}
+.row{
+    width: 304px;
+    display: flex;
+    justify-content: start;
+    margin: 0 auto;
+}
+
+.same:nth-child(3n) {
+    border-right: none;
+}
+
+.same:nth-child(n+7){
+    border-bottom: none;
+} 
+
+
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+
+}
+
+
+.same {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 80px;
+    border-right: 5px solid  var(--new-color);
+    border-bottom: 5px solid var(--new-color); 
+}
+
+
+
